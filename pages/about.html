@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,100,1;1,9..144,100..900,100,1&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/styles/about.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="/images/logo-removebg-preview.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/clubs.html">Clubs/Organizations</a></li>
+            <li><a href="/pages/work.html">Work Experience</a></li>
+            <li><a href="/pages/projects.html">Summer Project/Programs</a></li>
+            <li><a href="/pages/awards.html">Awards</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h1>About <span id = "me">Me</span></h1>
+            <p>Hi! My name is Sanvi Gowda, and I am a senior at Westborough High School. I've lived in Westborough for the past 10 years now, but I used to live in California. I moved during winter - the weather adjustment was rough.</p>
+            <p>Although I love computer science, I also enjoy doodling, reading, and having movie nights with my friends. My favorite book currently is Pride and Prejudice by Jane Austen. I read it for the first time in my English class junior year, and I absolutely fell in love with the witty, sarcastic writing and the character of Elizabeth Bennet.
+                My favorite movie is Into the Spiderverse, since I loved the story and it was so visually stunning. I'm looking forward to the release of Beyond the Spiderverse!</p>
+        </div>
+
+        <img src="/images/aboutMeImage.jpg" id="aboutMeImage">
+    <div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-250px"
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,100,1;1,9..144,100..900,100,1&display=swap"
+        rel="stylesheet">
+    <title>Awards</title>
+    <link rel="stylesheet" href="/styles/awards.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="/images/SGlogo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/clubs.html">Clubs/Organizations</a></li>
+            <li><a href="/pages/work.html">Work Experience</a></li>
+            <li><a href="/pages/projects.html">Summer Project/Programs</a></li>
+            <li><a href="/pages/awards.html">Awards</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h1>Awards</h1>
+        </div>
+
+        <div id="awards">
+            <div class="award">
+                <div class="awardDescription">
+                    <h2 class="awardTypeTitle">National Merit Commended Student</h2>
+                    <p>I was among the top 50,000 students who took the 2023 PSAT and participated in the 2025 National Merit Program. 
+                    </p>
+                </div>
+                <div class="awardImages">
+                    <img class="academicAwardImage" id="nmCommendedLetter" src="/images/awards/nmCommendedLetter.png">
+                </div>
+            </div>
+
+            <div class="award">
+
+                <div class="awardImages">
+                    <img class="academicAwardImage" id="apScholarImage" src="/images/awards/apScholarAward.png">
+                </div>
+                
+                <div class="awardDescription">
+                    <h2 class="awardTypeTitle">AP Scholar</h2>
+                    <p>I received the AP Scholar award for receiving scores of 3 or higher on three or more AP Exams.
+                    </p>
+                    <ul>
+                        <li>AP Statistics: 5</li>
+                        <li>AP Computer Science A: 5</li>
+                        <li>AP Biology: 5</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="award">
+                <div class="awardDescription">
+                    <h2 class="awardTypeTitle">Academic Awards</h2>
+                    <p>In my school, each course gives an award to one student who has shown excellence in that course.
+                        Here are the classes that I've received the awards in during my time in high school so far!</p>
+                    <ul>
+                        <li>Introduction to Python (9th Grade)</li>
+                        <li>Algebra 2 (10th Grade)</li>
+                        <li>AP Statistics (10th Grade)</li>
+                        <li>AP Computer Science A (11th Grade)</li>
+                    </ul>
+                </div>
+                <div class="awardImages" id="academicAwardImages">
+                    <img class="academicAwardImage" src="/images/awards/pythonAward.jpg">
+                    <img class="academicAwardImage" src="/images/awards/algebraAward.jpg">
+                    <img class="academicAwardImage" src="/images/awards/apStatsAward.jpg">
+                    <img class="academicAwardImage" src="/images/awards/apCSAAward.jpg">
+                </div>
+            </div>
+
+            <div class="award">
+                <div class="awardImages" id="stucoAwardImages">
+                    <div class="stucoAwardImageContainer">
+                        <img class="stucoAwardImage" src="/images/awards/topTen9.png">
+                    </div>
+                    <div class="stucoAwardImageContainer">
+                        <img class="stucoAwardImage" src="/images/awards/topTen10.png">
+                    </div>
+                    <div class="stucoAwardImageContainer">
+                        <img class="stucoAwardImage" src="/images/awards/topTen11.png">
+                    </div>
+                    <div class="stucoAwardImageContainer">
+                        <img class="stucoAwardImage" src="/images/awards/stucoMVP.JPG">
+                        <p class="awardCaption">Me (right) receiving the Student Council MVP Award from the president, Kylah Rice</p>
+                    </div>
+                </div>
+
+                <div class="awardDescription" id="stucoAwardDescription">
+                    <h2 class="awardTypeTitle">Student Council Awards</h2>
+                    <p>My Student Council operates on a point system. You have to participate in non-mandatory events to
+                        get points, and you need a certain number of points each quarter to stay on Student Council. At
+                        the end of the year, an award is given to the Top 10 Point Earners for being the most active
+                        members on council, and I am proud to say I have won this award my freshman, sophomore, and
+                        junior year.</p>
+                    <p>Along with the Top 10 awards and an award for a council member of each grade, an award for the
+                        Student Council MVP is given by the president of Student Council. I was honored to be the
+                        recipient of the Student Council MVP award my sophomore year.</p>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        <div>
+
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0"
+                }
+
+                function closemenu() {
+                    sidemenu.style.right = "-250px"
+                }
+
+            </script>
+
+</body>
+
+</html>

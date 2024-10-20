@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,100,1;1,9..144,100..900,100,1&display=swap" rel="stylesheet">
+    <title>Sanvi's Portfolio</title>
+    <link rel="stylesheet" href="/styles/index.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="/images/SGlogo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/clubs.html">Clubs/Organizations</a></li>
+            <li><a href="/pages/work.html">Work Experience</a></li>
+            <li><a href="/pages/projects.html">Summer Project/Programs</a></li>
+            <li><a href="/pages/awards.html">Awards</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div id="index-container">
+            
+
+            <div class="header-text">
+                <h1><span id="hi">Hi, I'm <span id="sanvi">Sanvi</span>!</span></h1>
+                <p id="intro-bio">Nice to meet you! I'm currently a senior at Westborough High School, and aspire to further my studies in computer science. <br>Click around to learn a little more about me!</p>
+            </div>
+    <div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-250px"
+        }
+
+    </script>
+
+</body>
+
+</html>

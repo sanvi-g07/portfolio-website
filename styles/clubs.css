@@ -1,0 +1,222 @@
+* {
+    font-family: 'Fraunces', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FCF8F3;
+    color: #292a2c;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+    padding: 10px 10%;
+}
+
+.logo {
+    width: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #292a2c;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #DCA47C;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+/* .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+    margin: -150px 0 0 0;
+} */
+
+h1 {
+    font-size: 130px;
+    font-variation-settings: 'wght' 800;
+    font-style: italic;
+    color: #698474;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#clubs {
+    display: flex;
+    flex-direction: column;
+}
+
+.club {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    margin-bottom: 80px; 
+}
+
+.clubTitle {
+    color: #DCA47C;
+    font-size: 50px;
+    margin: 0;
+}
+
+.leadership {
+    color: #698474;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.clubImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.clubImageContainer {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 50%;
+    flex-shrink: 0;
+    height: auto;
+    align-self: start;
+}
+
+.clubCaption {
+   width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.clubImageContainer:hover .clubCaption{
+    opacity:1;
+}
+
+.clubDescription {
+    flex: 1; /* Allow the description to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#nhsImageContainer {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 40%;
+    height: auto;
+}
+
+#nhsDescription {
+    flex: 1;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* ------------ PHONE ---------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+    #header {
+        background: #FCF8F3;
+        color: #292a2c;
+    }
+
+    /* .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    } */
+
+    .header-text h1 {
+        font-size: 40px;
+        inline-size: 200px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
