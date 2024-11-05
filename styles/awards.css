@@ -125,7 +125,7 @@ ul {
 
 .academicAwardImage {
     flex: 1;
-    width: 250px;
+    width: 100%;
     height: auto;
     padding: 10px;
 
@@ -145,15 +145,6 @@ ul {
     width: 70%;
 }
 
-/* .stucoAwardImage {
-    flex: 1;
-    width: 250px;
-    height: 250px; /* Ensure the container has specific dimensions */
-    /* padding: 10px;
-    object-fit: cover; */
-
-/* }  */ 
-
 .stucoAwardImage {
     width: 100%;
     height: auto;
@@ -161,7 +152,7 @@ ul {
     display: block;
 }
 
-.stucoAwardImageContainer {
+.awardImageContainer {
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -191,7 +182,7 @@ ul {
     padding-right: 10px;
 }
 
-.stucoAwardImageContainer:hover .awardCaption{
+.awardImageContainer:hover .awardCaption{
     opacity:1;
 }
 
@@ -212,55 +203,3 @@ ul {
 
 
 
-/* ------------ PHONE ---------- */
-
-nav .fa-solid{
-    display: none;
-}
-
-@media only screen and (max-width: 1250px) {
-    #header {
-        background: #FCF8F3;
-        color: #292a2c;
-    }
-
-    /* .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    } */
-
-    .header-text h1 {
-        font-size: 40px;
-        inline-size: 200px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-}
