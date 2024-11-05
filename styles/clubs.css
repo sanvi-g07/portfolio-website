@@ -115,7 +115,7 @@ p {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    width: 50%;
+    /* width: 50%; */
     flex-shrink: 0;
     height: auto;
     align-self: start;
@@ -145,7 +145,7 @@ p {
 }
 
 .clubDescription {
-    flex: 1; /* Allow the description to take up the remaining space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -155,7 +155,6 @@ p {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    width: 40%;
     height: auto;
 }
 
@@ -167,56 +166,9 @@ p {
     justify-content: flex-start;
 }
 
-
-/* ------------ PHONE ---------- */
-
-nav .fa-solid{
-    display: none;
-}
-
-@media only screen and (max-width: 1250px) {
-    #header {
-        background: #FCF8F3;
-        color: #292a2c;
-    }
-
-    /* .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    } */
-
-    .header-text h1 {
-        font-size: 40px;
-        inline-size: 200px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+.clubImageContainerContainer {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
 }
