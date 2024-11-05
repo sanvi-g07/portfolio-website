@@ -57,16 +57,6 @@ nav ul li a:hover::after{
     padding: 10px 5%;
 }
 
-/* .header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    justify-content: center;
-    margin: -150px 0 0 0;
-} */
-
 h1 {
     font-size: 120px;
     font-variation-settings: 'wght' 800;
@@ -208,67 +198,4 @@ li {
     width: 60%;
     margin: 10px;
     
-}
-
-
-/* .gwcSPImage {
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 5px;
-} */
-
-/* ------------ PHONE ---------- */
-
-nav .fa-solid{
-    display: none;
-}
-
-@media only screen and (max-width: 1250px) {
-    #header {
-        background: #FCF8F3;
-        color: #292a2c;
-    }
-
-    /* .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    } */
-
-    .header-text h1 {
-        font-size: 40px;
-        inline-size: 200px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
 }
