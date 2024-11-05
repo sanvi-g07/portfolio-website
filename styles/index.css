@@ -89,74 +89,8 @@ nav ul li a:hover::after{
 }
 
 #intro-bio {
-    margin: 0 auto; /* Center align */
-    font-size: 24px; /* Adjust as needed */
-    margin-top: 40px; /* Adjust spacing between h1 and p */
-    width: 65%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------ PHONE ---------- */
-
-nav .fa-solid{
-    display: none;
-}
-
-@media only screen and (max-width: 1250px) {
-    #header {
-        background: #FCF8F3;
-        color: #292a2c;
-    }
-
-    /* .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    } */
-
-    .header-text h1 {
-        font-size: 40px;
-        inline-size: 200px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 10;
-        transition: right 0.5s;
-
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+    margin: 0 auto; 
+    font-size: 24px; 
+    margin-top: 40px; 
+    width: 70%;
 }
