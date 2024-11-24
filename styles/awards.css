@@ -57,16 +57,6 @@ nav ul li a:hover::after{
     padding: 10px 5%;
 }
 
-/* .header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1;
-    justify-content: center;
-    margin: -150px 0 0 0;
-} */
-
 h1 {
     font-size: 150px;
     font-variation-settings: 'wght' 800;
@@ -105,9 +95,9 @@ ul {
 
 .awardImages {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
+    justify-content: center; 
+    align-items: center;
+    width: 50%; 
 }
 
 #academicAwardImages {
@@ -185,21 +175,3 @@ ul {
 .awardImageContainer:hover .awardCaption{
     opacity:1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
